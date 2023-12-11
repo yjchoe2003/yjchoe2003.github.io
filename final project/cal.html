@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal</title>
+</head>
+<body>
+    <script>
+    function calculatorBMI(){
+        let bar, litter, deep, minite;
+        bar = document.getElementById("b").value;
+        litter = document.getElementById("l").value;
+        deep = document.getElementById("d").value;
+        minite = document.getElementById("m").value;
+        bar = parseFloat(bar);
+        litter = parseFloat(litter);
+        deep = parseFloat(deep);
+        minite = parseFloat(minite);
+        let bmi ;
+        bmi= (((bar*litter)/((deep+10)/10))/minite);
+        document.getElementById("bmi").value = bmi;
+    }
+    </script>
+    <form>
+        바(bar): <input id="b"><br>
+        실린더용적(L): <input id="l"><br>
+        수심(m): <input id="d"><br>
+        잠수시간(분): <input id="m"><br>
+
+        공기소모량: <input id="bmi"><br>
+        <input type="button" value="공기소모량" onclick="calculatorBMI();"><br>
+    </form>
+</body>
+</html>
