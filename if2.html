@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="a" name="a">
+        <option></option>
+        <option value="1">오픈워터</option>
+        <option value="2">어드밴스</option>
+        <option value="3">레스큐</option>
+        <option value="4">마스터</option>
+    </select>
+
+    <br>
+    <br>
+
+    <select id="b" name="b">
+        <option></option>
+        <option value="5">동해안(50m)</option>
+        <option value="6">서해안(40m)</option>
+        <option value="7">제주도(60m)</option>
+        <option value="8">난파선</option>
+    </select>
+  
+    <br>
+    <br>
+
+    <button onclick="message()">확인</button>
+
+      <SCRIPT>
+
+        function message() {
+        
+        var s = document.getElementById('a');
+        var a = s.options[s.selectedIndex].value;
+        var s = document.getElementById('b');
+        var b = s.options[s.selectedIndex].value;
+        
+        if (a==1 && b==5) {
+            alert("가능합니다.")
+        }
+        else if (a==1 && b==6) {
+            alert("가능합니다.")
+        }
+        else if (a==1 && b==7) {
+            alert("불가능합니다.")
+        }
+        else if (a==1 && b==8) {
+            alert("불가능합니다.")
+        }
+        else if (a==2 && b==5) {
+            alert("가능합니다.")
+        }
+        else if (a==2 && b==6) {
+            alert("가능합니다.")
+        }
+        else if (a==2 && b==7) {
+            alert("가능합니다.")
+        }
+        else if (a==2 && b==8) {
+            alert("불가능합니다.")
+        }
+        else if (a==3 && b==5) {
+            alert("가능합니다.")
+        }
+        else if (a==3 && b==6) {
+            alert("가능합니다.")
+        }
+        else if (a==3 && b==7) {
+            alert("가능합니다.")
+        }
+        else if (a==3 && b==8) {
+            alert("가능합니다.")
+        }
+        else if (a==4 && b==5) {
+            alert("가능합니다.")
+        }
+        else if (a==4 && b==6) {
+            alert("가능합니다.")
+        }
+        else if (a==4 && b==7) {
+            alert("가능합니다.")
+        }
+        else if (a==4 && b==8) {
+            alert("가능합니다.")
+        }
+        }
+        
+        </SCRIPT>
+</body>
+</html>
